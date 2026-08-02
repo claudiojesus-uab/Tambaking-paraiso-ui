@@ -15,3 +15,11 @@ function alternarTema() {
 }
 
 buttonMode.addEventListener("click", alternarTema);
+
+
+const boton = document.querySelector(".menu-toggle");
+const menu = document.querySelector(".menu");
+
+boton.addEventListener("click", () => {
+    menu.classList.toggle("active");
+});

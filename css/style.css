@@ -61,22 +61,32 @@ main{
     width: 200px;
 }
 
-nav {
+.menu {
     display: flex;
     background-color: #53afe1;
     justify-content: center;
     gap: 20px;
     padding: 10px 0px;
 }
-nav a{
+.menu a{
     text-decoration: none;
     color: white;
     font-size: 18px;
     font-weight: bold;
     transition: 0.3s;
 }
-nav a:hover{
+.menu a:hover{
     color: #313675;
+}
+.menu-toggle {
+    display: none;
+    background-color: #53afe1;
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 5px;
+    
 }
 
 body.modo-claro main{
@@ -119,22 +129,6 @@ body.modo-claro footer{
     color: black;
 }
 
-/*body.mode-claro .tarjeta{
-    color: white;
-}
-body.mode-claro .tarjeta h2{
-    background-color: #0b6fa4;
-    color: white;
-}
-body.mode-claro article{
-    background-color: #add3e7;
-}
-body.mode-claro article h2{
-    background-color: #0b6fa4;
-}
- body.mode-claro from label{
-
-}*/
 @media (max-width: 768px){
 
     header{
@@ -164,6 +158,23 @@ body.mode-claro article h2{
 
     .productos article{
         width: 100%;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    .menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .menu a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .menu.active {
+        display: flex;
     }
 
 }
