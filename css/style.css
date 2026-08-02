@@ -1,96 +1,228 @@
 body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #d7eef8;
 }
 
 header{
-    background-color: #0c4056;
+    background-color: #093C5D;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 40px;
-}
 
-.logo img{
-    width: 140px;
+    margin: 0 auto;
+    padding: 20px;
 }
-
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+main{
+    padding: 30px 0px;
+    background-color: #3B7597;
 }
-nav a{
-    text-decoration: none;
+.buttonMode{
+    margin-top: 20px;
+    background-color: #7ab0e7;
     color: black;
-    font-size: 18px;
-    font-weight: bold;
-    margin: 15px;
-    transition: 0.3s;
-}
-nav a:hover{
-    color: #2ba84a;
-}
-@media (max-width: 800px) {
+    border-radius: 5px;
+    border: 2px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
 
-    nav {
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        gap: 10px;
-    }
+}.logo{
+    width: 20%;
+}
+.titulo{
+    width: 60%;
+    text-align: center;
+}
+.titulo h1{
+    font-family: georgia, 'Times New Roman', Times, serif;
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: white;
+}.titulo p{
+    font-size: 20px;
+    color: white;
+}
+
+.redes{
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
 }
 .redes img{
-    width: 35px;
-    margin-left: 10px;
+    width: 50px;
     transition: 0.3s;
 }
 .redes img:hover{
     transform: scale(1.15);
 }
 
-.banner{
-    text-align: center;
+
+.logo img{
+    width: 200px;
+}
+
+nav {
+    display: flex;
+    background-color: #53afe1;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+nav a:hover{
+    color: #313675;
+}
+
+body.modo-claro main{
+    background-color: #d7eef8;
+    color: black;
+}
+body.modo-claro header {
+    background-color: #d6eefe;
+    color: black;
+}
+body.modo-claro .titulo h1{
+    color: black;
+}
+body.modo-claro header p{
+    color: black;
+}
+body.modo-claro nav{
+    background-color: #b4def5;
+}
+body.modo-claro nav a{
+    color: black;
+}
+body.modo-claro nav a:hover{
+    color: #313675;
+}
+body.modo-claro .historia{
+    background-color: #b4def5;
+    color: black;
+}
+body.modo-claro .productos article{
+    background-color: #b4def5;
+    color: black;
+}
+body.modo-claro .calidad{
+    background-color: #b4def5;
+    color: black;
+}
+body.modo-claro footer{
+    background-color: #b4def5;
+    color: black;
+}
+
+/*body.mode-claro .tarjeta{
+    color: white;
+}
+body.mode-claro .tarjeta h2{
     background-color: #0b6fa4;
     color: white;
-    padding: 50px 20px;
+}
+body.mode-claro article{
+    background-color: #add3e7;
+}
+body.mode-claro article h2{
+    background-color: #0b6fa4;
+}
+ body.mode-claro from label{
 
-    border: 1px solid black;
-    border-radius: 0;
-}
-.banner h1{
-    font-size: 48px;
-    margin-bottom: 10px;
+}*/
+@media (max-width: 768px){
+
+    header{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo,
+    .titulo,
+    .redes{
+        width: 100%;
+    }
+
+    .redes{
+        justify-content: center;
+        margin-top: 15px;
+    }
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .productos{
+        flex-direction: column;
+    }
+
+    .productos article{
+        width: 100%;
+    }
+
 }
 
-.banner p{
-    font-size: 20px;
-}
 .historia{
     text-align: left;
     background-color: #5695b7;
     color: white;
     padding: 50px 20px;
+    width: 80%;
+    margin: 30px auto;
 
-    border: 1px solid black;
-    border-radius: 0;
+    border: 2px solid black;
+    border-radius: 20px;
 }
+
 .productos{
-    text-align: left;
-    background-color: #add3e7;
-    color: black;
-    padding: 50px 20px;
+    width: 80%;
+    margin: 30px auto;
 
-    border: 1px solid black;
-    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
+ .productos article{
+    flex: 1;
+    padding: 20px;
+
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #0b6fa4;
+    color: white;
+    text-align: center;
+
+ }
+ .productos article img{
+    width: 100%;
+    /*display: block;*/
+    margin: 15px auto;
+ }
+ .calidad{
+    text-align: left;
+    background-color: #5695b7;
+    color: white;
+    padding: 50px 20px;
+    width: 80%;
+    margin: 30px auto;
+
+    border: 2px solid black;
+    border-radius: 20px;
+ }
 
 footer{
     background-color: #0b5c8a;
     color: white;
     text-align: center;
-    padding: 15px;
+    padding: 1px 0px;
+
 }
 
 .contacto{
@@ -117,4 +249,8 @@ footer{
 }
 .contacto button:hover{
     background-color: #09567f;
+}
+*{
+    box-sizing: border-box;
+    /*outline: 1px solid red;*/
 }
