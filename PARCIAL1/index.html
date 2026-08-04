@@ -17,7 +17,7 @@
             <h1>CAFE TRIGAL</h1>
             <p>Bienvenido a nuestro café</p>
         </div>
-        <div class="redes-sociales">
+        <div class="redes">
             <a href="#"><img src="/PARCIAL1/img/facebook.webp" alt="Facebook"></a>
             <a href="#"><img src="/PARCIAL1/img/tiktok.webp" alt="TikTok"></a>
             <a href="#"><img src="/PARCIAL1/img/instagram.webp" alt="Instagram"></a>
@@ -30,15 +30,15 @@
         <a href="contacto.html">CONTACTOS</a>
     </nav>
     <main>
-        <section>
-            <p>Estos son algunos de nuestros productos disponibles:</p>
+        <section class="cafe" id="cafe">
+            <h2>Nuestros Cafés</h2>
             <ul>
-                <li>Producto A - Bs 48</li>
-                <li>Producto B - Bs 35</li>
-                <li>Producto C - Bs 20</li>
+                <li>Café Americano - Bs 12</li>
+                <li>Capuchino - Bs 18</li>
+                <li>Submarino - Bs 15</li>
             </ul>
         </section>
-        <section>
+        <section class="contacto" id="contacto">
             <section class="seccion-formulario">
                 <form id="formulario-contacto">
                     <label for="nombre">Nombre:</label>
@@ -51,8 +51,9 @@
                     <input type="text" id="mensaje" name="mensaje" required>
                 </form>
 
-                <button id="btn-enviar">Enviar</button>
-                <p id="mensaje-respuesta"></p>
+                <button id="btn-confirmar">Confirmar pedido</button>
+                <p id="mensaje-respuesta" class="oculto"></p>
+        
             </section>
         </section>
     </main>

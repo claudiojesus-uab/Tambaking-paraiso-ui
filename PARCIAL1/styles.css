@@ -16,3 +16,56 @@ main{
     padding: 30px 3px;
     background-color: antiquewhite;
 }
+.logo img{
+    width: 200px;
+
+}
+.logo{
+    width: 20%;
+}
+.titulo{
+    width: 60%;
+    text-align: center;
+}
+.titulo h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: black;
+}
+.redes{
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.redes img{
+    width: 50px;
+    transition: 0.3s;
+}
+.menu{
+    display: flex;
+    background-color: #f0f0f0;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px 0px;
+}
+.menu a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.menu :hover{
+    color: blueviolet;
+}
+.oculto{
+    display: none;
+}
+footer{
+    background-color: #555759;
+    color: black;
+    text-align: center;
+    padding: 1px 0px;
+}
