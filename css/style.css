@@ -261,6 +261,19 @@ footer{
 .contacto button:hover{
     background-color: #09567f;
 }
+.aviso{
+    display: none;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.aviso.exito{
+    display: block;
+    color: green;
+}
+.aviso.error{
+    display: block;
+    color: red;
+}
 *{
     box-sizing: border-box;
     /*outline: 1px solid red;*/
