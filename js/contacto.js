@@ -17,7 +17,7 @@ function revisarPedido(event) {
         avisoPedido.classList.add("error");
         avisoPedido.classList.remove("exito");
     } else {
-        event.preventDefault();
+        
         avisoPedido.textContent = "¡Formulario enviado con éxito!";
         avisoPedido.classList.add("exito");
         avisoPedido.classList.remove("error");
