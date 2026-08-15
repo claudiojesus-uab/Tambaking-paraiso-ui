@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacto - Tambaking</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <section class="contacto">
+            <h2>Contacto</h2>
+            <p>
+                ¿Tienes alguna pregunta? ¡Contáctanos!
+
+            </p>
+            <form id="form-contacto" method=post action="procesar.php" novalidate>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Tu email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Tu mensaje" required></textarea>
+
+                <button type="submit">Enviar</button>
+                <p id="error-pedido" class="aviso"></p>
+            </form>
+        </section>
+    </main>
+    <script src="js/contacto.js"></script>
+</body>
