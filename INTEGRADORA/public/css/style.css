@@ -1,0 +1,280 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: #093C5D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0 auto;
+    padding: 20px;
+}
+main{
+    padding: 30px 0px;
+    background-color: #3B7597;
+}
+.buttonMode{
+    margin-top: 20px;
+    background-color: #7ab0e7;
+    color: black;
+    border-radius: 5px;
+    border: 2px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+
+}.logo{
+    width: 20%;
+}
+.titulo{
+    width: 60%;
+    text-align: center;
+}
+.titulo h1{
+    font-family: georgia, 'Times New Roman', Times, serif;
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: white;
+}.titulo p{
+    font-size: 20px;
+    color: white;
+}
+
+.redes{
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.redes img{
+    width: 50px;
+    transition: 0.3s;
+}
+.redes img:hover{
+    transform: scale(1.15);
+}
+
+
+.logo img{
+    width: 200px;
+}
+
+.menu {
+    display: flex;
+    background-color: #53afe1;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0px;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.menu a:hover{
+    color: #313675;
+}
+.menu-toggle {
+    display: none;
+    background-color: #53afe1;
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+
+body.modo-claro main{
+    background-color: #d7eef8;
+    color: black;
+}
+body.modo-claro header {
+    background-color: #d6eefe;
+    color: black;
+}
+body.modo-claro .titulo h1{
+    color: black;
+}
+body.modo-claro header p{
+    color: black;
+}
+body.modo-claro nav{
+    background-color: #b4def5;
+}
+body.modo-claro nav a{
+    color: black;
+}
+body.modo-claro nav a:hover{
+    color: #313675;
+}
+body.modo-claro .historia{
+    background-color: #b4def5;
+    color: black;
+}
+body.modo-claro .productos article{
+    background-color: #b4def5;
+    color: black;
+}
+body.modo-claro .calidad{
+    background-color: #b4def5;
+    color: black;
+}
+body.modo-claro footer{
+    background-color: #b4def5;
+    color: black;
+}
+
+@media (max-width: 768px){
+
+    header{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo,
+    .titulo,
+    .redes{
+        width: 100%;
+    }
+
+    .redes{
+        justify-content: center;
+        margin-top: 15px;
+    }
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .productos{
+        flex-direction: column;
+    }
+
+    .productos article{
+        width: 100%;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    .menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .menu a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .menu.active {
+        display: flex;
+    }
+
+}
+
+.historia{
+    text-align: left;
+    background-color: #5695b7;
+    color: white;
+    padding: 50px 20px;
+    width: 80%;
+    margin: 30px auto;
+
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.productos{
+    width: 80%;
+    margin: 30px auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+ .productos article{
+    flex: 1;
+    padding: 20px;
+
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #0b6fa4;
+    color: white;
+    text-align: center;
+
+ }
+ .productos article img{
+    width: 100%;
+    /*display: block;*/
+    margin: 15px auto;
+ }
+ .calidad{
+    text-align: left;
+    background-color: #5695b7;
+    color: white;
+    padding: 50px 20px;
+    width: 80%;
+    margin: 30px auto;
+
+    border: 2px solid black;
+    border-radius: 20px;
+ }
+
+footer{
+    background-color: #0b5c8a;
+    color: white;
+    text-align: center;
+    padding: 1px 0px;
+
+}
+
+.contacto{
+    width: 400px;
+    margin: 60px auto;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid #0b6fa4;
+    border-radius: 10px;
+    
+}
+.contacto form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contacto button{
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid #0b6fa4;
+    border-radius: 5px;
+    background-color: #0b6fa4;
+    color: white;
+}
+.contacto button:hover{
+    background-color: #09567f;
+}
+.aviso{
+    display: none;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.aviso.exito{
+    display: block;
+    color: green;
+}
+.aviso.error{
+    display: block;
+    color: red;
+}
+*{
+    box-sizing: border-box;
+    /*outline: 1px solid red;*/
+}
